@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <link rel="stylesheet" href="css/form.css">
+        <style>
+            body{
+                padding: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form class="form" action="./" method="POST">
+            <div class="form__title">Student Details</div>
+            <p class="form__desc">
+                This is to give you an accurate representation of what scholarships
+                and colleges are near you that fit your preferences.
+            </p>
+            <div class="form__item">
+                <label for="names" class="form__label">Name:</label>
+                <input type="text" class="form__input" name="names" id="names" placeholder="Enter first and last name">
+                <span class="form__error">Incorrect Input</span>
+            </div>
+            <div class="form__item">
+                <label for="gradYear" class="form__label">High School Graduation Year:</label>
+                <input type="number" class="form__input form__input--small" name="gradYear" id="gradYear" min = 2023 max = 2027 placeholder="Enter Graduation Year">
+                <span class="form__error">Incorrect Input</span>
+            </div>
+            <div class="form__item">
+                <label for="Major" class="form__label">Preferred Major:</label>
+                <select name="Major" id="Major" class="form__input"> 
+                    <option value="Computer Science">Computer Science</option> 
+                    <option value="Engineering">Engineering</option> 
+                    <option value="Business">Business</option> 
+                    <option value="Pre-Med Program">Pre-Med Program</option> 
+                    <option value="Undecided">Undecided</option> 
+                </select>
+                <span class="form__error">Incorrect Input</span>
+            </div>
+            <div class="form__item">
+                <button class="form__btn" type="submit">Save Information</button>
+            </div>
+        </form>
+        <script src="js/form.js"></script>
+        <body style="background-color:rgba(222, 171, 40, 0.676);"></body>
+
+        
+    </body>
+</html>
