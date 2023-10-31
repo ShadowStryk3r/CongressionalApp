@@ -64,7 +64,7 @@
             </svg>
           </div>
         <center>
-            <form class="form" action="./" method="POST">
+            <form class="form"  method="POST">
                 <div class="form__title">Student Details</div>
                 <p class="form__desc">
                     This is to give you an accurate representation of what scholarships
@@ -82,7 +82,7 @@
                 </div>
                 <div class="form__item">
                     <label for="ecs" class="form__label">Extra-Curriculars:</label>
-                    <textarea class="form__input form__input--small" name="gradYear" id="gradYear" placeholder="Enter Any Extra-Curriculars"></textarea>
+                    <textarea class="form__input form__input--small" name="ecs" id="ecs" placeholder="Enter Any Extra-Curriculars"></textarea>
                     <span class="form__error">Incorrect Input</span>
                 </div>
                 <div class="form__item">
@@ -101,9 +101,12 @@
                     </select>
                     <span class="form__error">Incorrect Input</span>
                 </div>
-                <div class="form__item">
-                    <button class="form__btn" type="submit">Save Information</button>
-                </div>
+                <a href = "index.html">
+                    <div class="form__item form_btn">
+                           <!--<button class="form__btn" type="submit">Save Information</button>--> 
+                           <img width = "80 px" height = "40 px" src = "img/submit-button-blue.png" alt = "Submit">
+                    </div>
+                </a>
             </form>
             <script src="css/form.js"></script>
         </center>
